@@ -10,39 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<header>
-    <div class="container">
-        <img src="/assets/logo.png" alt="logo">
-        <div class="logo_name">
-            <p class="lead">
-                LEAD
-            </p>
-            <p class="advisors">
-                ADVISORS
-            </p>
-        </div>
-    </div>
-</header>
-
-
 <body>
-    <div class="text">
-        <h1>UNDER CONSTRUCTION</h1>
-        <p>We're making lots of improvements and will be back soon</p>
-    </div>
-    <div class="timer">
-
-    </div>
-    <div class="button">
-        <p>Check our event page when you wait:</p>
-        <button>
-            Go to the event
-        </button>
+    <div class="wrapper">
+        <img class="left_smth" src="/assets/left_smth.png" alt="left_smth">
+        <img class="right_smth" src="/assets/right_smth.png" alt="right_smth">
+        <header>
+            <img class="logo" src="/assets/logo.svg" alt="logo">
+        </header>
+        <main>
+            <div class="text">
+                <h1>UNDER CONSTRUCTION</h1>
+                <p>We're making lots of improvements and will be back soon</p>
+            </div>
+            <div class="timer">
+                <div class="timer__items">
+                    <div class="timer__item timer__days">00</div>
+                    <div class="timer__item timer__hours">00</div>
+                    <div class="timer__item timer__minutes">00</div>
+                    <div class="timer__item timer__seconds">00</div>
+                </div>
+                <div class="timer__naming">
+                    <div class="timer__name">Days</div>
+                    <div class="timer__name">Hours</div>
+                    <div class="timer__name">Minutes</div>
+                    <div class="timer__name">Seconds</div>
+                </div>
+            </div>
+            <div class="event_link">
+                <p>Check our event page when you wait:</p>
+                <button class="button">
+                    Go to the event
+                    <img src="/assets/button_arrow.png" alt="button_arrow">
+                </button>
+            </div>
+        </main>
+        <footer>
+            <form action="">
+                <input class="email" type="email" placeholder="Enter your Email and get notified">
+                <button class="submit" type="submit">
+                    <img src="/assets/button_arrow.png" alt="button_arrow">
+                </button>
+            </form>
+        </footer>
     </div>
 </body>
-
-
-<footer>
-
-</footer>
 </html>
