@@ -29,41 +29,19 @@ body{
 .right_smth{
     display: block;
     position: absolute;
-    width: 45%;
-    /* height: 75%; */
-    /* left: 1586px;
-    top: -475px; */
-    left: 82%;
-    top: -50%;
+    width: 865px;
+    left: 1586px;
+    top: -475px;
     rotate: -77deg;
 }
 
 .left_smth{
     display: block;
     position: absolute;
-    width: 45%;
-    /* height: 75%; */
-    /* left: -431px;
-    top: -317px; */
-    left: -22.5%;
-    top: -33.4%;
+    width: 865px;
+    top: -317px;
+    left: -431px;
     rotate: -24deg;
-}
-
-.lead{
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 700;
-    color: #172C4F;
-    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.advisors{
-    letter-spacing: 4px;
-    font-size: 10px;
-    font-weight: 700;
-    color: #172C4F;
-    text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .text>h1{
@@ -98,7 +76,7 @@ main{
 .timer__items {
     display: flex;
     margin: 0 auto;
-    width: 600px;
+    width: 588px;
     justify-content: space-around;
     font-family: 'Poppins';
     font-style: normal;
@@ -125,7 +103,7 @@ main{
 .timer__naming{
     display: flex;
     margin: 0 auto;
-    width: 600px;
+    width: 588px;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 72px;
@@ -292,3 +270,183 @@ form{
 }
 
 
+@media (max-width: 768px){
+.right_smth{
+    top: -500px;
+    left: 417px;
+    rotate: -88.63deg;
+}
+
+.left_smth{
+    display: block;
+    position: absolute;
+    width: 478px;
+    left: -250px;
+    top: -197px;
+    rotate: -24deg;
+}
+
+.logo{
+    padding-top: 100px;
+}
+
+.text>h1{
+    width: 419px;
+    font-size: 36px;
+    line-height: 104%;
+    padding: 166px 0 20px 0;
+}
+
+.text>p{
+    width: 286px;
+    font-size: 16px;
+}
+
+.timer__items {
+    display: flex;
+    width: 358px;
+    font-size: 36px;
+    padding-top: 40px;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 27px;
+    padding-bottom: 6px;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -30px;
+    font-family: 'Poppins';
+}
+
+.timer__naming{
+    width: 358px;
+    padding-bottom: 40px;
+}
+
+.timer__name{
+    color:white;
+    background-image: url(assets/for_smaller_timer.png);
+    min-width: 64px;
+    max-width: 64px;
+    height: 40px;
+}
+
+.event_link>p{
+    font-size: 16px;
+    max-width: 300px;
+    padding-bottom: 15px;
+}
+
+.button{
+    margin-bottom: 169px;
+}
+
+footer{
+    height: 160px;
+}
+
+
+.email{
+    padding:0 0 0 20px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    height: 41px;
+    margin: 59px 204px 0 204px;
+    font-size: 14px;
+}
+
+.submit{
+    padding:0;
+    position: absolute;
+    left: 527px;
+    top: 63px;
+    background: #DF2224;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+
+}
+
+
+
+@media (max-width: 360px){
+    .right_smth{
+        width:642px;
+        top: -376px;
+        left: 125px;
+        rotate: -85deg;
+    }
+    
+    .left_smth{
+        display: block;
+        position: absolute;
+        width: 366px;
+        left: -200px;
+        top: -165px;
+        rotate: -24deg;
+    }
+
+    .logo{
+        max-width: 128px;
+        height: 40px;
+        padding-top: 80px;
+    }
+
+    .text>h1{
+        text-align: center;
+        width: 320px;
+        font-size: 36px;
+        line-height: 104%;
+        padding: 66px 0 16px 0;
+    }
+
+    .timer__items {
+        display: flex;
+        width: 310px;
+        font-size: 36px;
+        padding-top: 40px;
+    }
+
+    .timer__item:not(:last-child)::after {
+        right: -23px;
+    }
+
+    .timer__naming{
+        width: 310px;
+    }
+
+    .button{
+        margin-bottom: 86px;
+    }
+
+    footer{
+        height: 141px;
+    }
+
+    .email{
+        width: 280px;
+        height: 41px;
+        margin: 50px 40px;
+        font-size: 14px;
+    }
+    
+    .submit{
+        padding:0;
+        position: absolute;
+        left: 283px;
+        top: 54px;
+        background: #DF2224;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+    }
+    
+    }
