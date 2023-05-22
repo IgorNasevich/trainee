@@ -93,7 +93,8 @@ body{
 
 main{
     flex: 1 0 auto;
-} 
+}
+
 .timer__items {
     display: flex;
     margin: 0 auto;
@@ -134,7 +135,7 @@ main{
     display: flex;
     font-family: 'Poppins';
     color:white;
-    background-image: url(/assets/for_timer.png);
+    background-image: url(assets/for_timer.png);
     min-width: 132px;
     height: 54px;
     align-items: center;
