@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if(diff > 0){
-        seconds = Math.floorMath.floor(diff / 1000) % 60;
+        seconds = Math.floor(diff / 1000) % 60;
       }
       else {
         seconds = 0;
       }
-      
+
       elemDays.textContent = days < 10 ? '0' + days : days;
       elemHours.textContent = hours < 10 ? '0' + hours : hours;
       elemMinutes.textContent = minutes < 10 ? '0' + minutes : minutes;

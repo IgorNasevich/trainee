@@ -155,6 +155,7 @@ main{
 }
 
 .button{
+    cursor: pointer;
     padding: 0;
     display: block;
     margin: 0 auto;
@@ -215,4 +216,77 @@ form{
     width: 43px;
     height: 43px;
     border-radius: 50%;
+}
+
+.transparent{
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; top: 0; bottom: 0; /* Занимает всё пространство */
+    background:rgba(22, 44, 78, 0.6); /* Полупрозрачный цвет фона */
+}
+.disappear{
+    display:none;
+}
+
+.message{
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto auto;
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+
+.message>h4{
+    padding-top: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 104%;
+    text-align: center; 
+    color: #162C4E;
+}
+
+.message>p{
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 29px 16px 30px 24px;
+}
+
+.button_note{
+    width: 200px;
+    cursor: pointer;
+}
+
+.cross{
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    padding: 16px;
+}
+.cross:before, .cross:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: gray;
+}
+.cross:before {
+    right: 4px;
+    transform: rotate(45deg);
+}
+.cross:after {
+    right: 4px;
+    transform: rotate(-45deg);
 }

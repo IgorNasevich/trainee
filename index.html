@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-    <script src="ajax.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
+        <div class="transparent mark disappear"></div>
+        <div class="message mark disappear">
+            <div class="cross mark disappear"></div>
+            <h4 class="mark disappear">SUCCESS!</h4>
+            <p class="mark disappear">You have successfully subscribed to the email newsletter</p>
+            <button class="button button_note mark disappear">Close</button>
+        </div>
         <img class="left_smth" src="assets/left_smth.png" alt="left_smth">
         <img class="right_smth" src="assets/right_smth.png" alt="right_smth">
         <header>
@@ -51,7 +56,7 @@
             </div>
         </main>
         <footer>
-            <form name="ajaxForm">
+            <form class = 'ajaxForm' name='ajaxForm' method="POST">
                 <input class="email" type="email" placeholder="Enter your Email and get notified" name="ajaxForm__inp">
                 <button class="submit" type="submit" name="ajaxForm__btn">
                     <img src="assets/button_arrow.png" alt="button_arrow">
@@ -60,4 +65,7 @@
         </footer>
     </div>
 </body>
+<script src="main.js"></script>
+<script src="ajax.js"></script>
+<script src="eventHandler.js"></script>
 </html>
