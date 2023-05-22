@@ -17,8 +17,15 @@ request.addEventListener("readystatechange", () => {
         for(let elem of elements){
             elem.classList.remove("disappear")
         }
-      // выводим в консоль то что ответил сервер
-	  console.log( 10 );
+    }
+
+    else if(request.status === 400) {
+        let elements = document.querySelectorAll(".mark");
+        for(let elem of elements){
+            elem.classList.remove("disappear")
+        }
+        document.querySelector(".result").innerHTML = "FAILURE!";
+        document.querySelector(".explanation").innerHTML = "subscription to the newsletter email is unsuccessful!";
     }
 });
 
@@ -37,4 +44,4 @@ let crossButton = document.querySelector(".cross");
 crossButton.addEventListener('click', closeWindow);
 
 let closeButton = document.querySelector(".button_note");
-crossButton.addEventListener('click', closeWindow);
+closeButton.addEventListener('click', closeWindow);
